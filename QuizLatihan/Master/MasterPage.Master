@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="QuizLatihan.Master.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Jewels & Diamonds</title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="nav">
+            <asp:Button ID="HomeBtn" runat="server" Text="Home" OnClick="HomeBtn_Click1"/>
+            <asp:Button ID="LoginBtn" runat="server" Text="Login" OnClick="LoginBtn_Click1" />
+            <asp:Button ID="RegisterBtn" runat="server" Text="Register" OnClick="RegisterBtn_Click" />
+            <asp:Button ID="CartBtn" runat="server" Text="Cart" OnClick="CartBtn_Click"/>
+            <asp:Button ID="MyOrdersBtn" runat="server" Text="My Orders" OnClick="MyOrdersBtn_Click"/>
+            <asp:Button ID="ProfileBtn" runat="server" Text="Profile" OnClick="ProfileBtn_Click"/>
+            <asp:Button ID="LogoutBtn" runat="server" Text="Logout" OnClick="LogoutBtn_Click"/>
+            <asp:Button ID="AddJewelBtn" runat="server" Text="Add Jewel" OnClick="AddJewelBtn_Click"/>
+            <asp:Button ID="ReportBtn" runat="server" Text="Report" OnClick="ReportBtn_Click"/>
+            <asp:Button ID="HandleOrderBtn" runat="server" Text="Handle Orders" OnClick="HandleOrderBtn_Click"/>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentBody" runat="server" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,189 @@
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.csproj.AssemblyReference.cache
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.csproj.CoreCompileInputs.cache
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\QuizLatihan.dll.config
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\QuizLatihan.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\QuizLatihan.pdb
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\csc.exe
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\csc.exe.config
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\csc.rsp
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\csi.exe
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\csi.exe.config
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\csi.rsp
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.AppContext.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Collections.Immutable.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Console.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Globalization.Calendars.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.Compression.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.FileSystem.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Net.Http.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Net.Sockets.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.ValueTuple.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XPath.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\vbc.exe
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\vbc.exe.config
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\vbc.rsp
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\VBCSCompiler.exe
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\roslyn\VBCSCompiler.exe.config
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\EntityFramework.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\EntityFramework.SqlServer.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\EntityFramework.xml
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\EntityFramework.SqlServer.xml
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\obj\Debug\QuizLati.8B217594.Up2Date
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.dll
+C:\Rendy Minjem\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.pdb
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\QuizLatihan.dll.config
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\QuizLatihan.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\QuizLatihan.pdb
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\csc.exe
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\csc.exe.config
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\csc.rsp
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\csi.exe
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\csi.exe.config
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\csi.rsp
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.AppContext.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Console.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.Compression.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Net.Http.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Net.Sockets.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.ValueTuple.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\vbc.exe
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\vbc.exe.config
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\vbc.rsp
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\VBCSCompiler.exe
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\EntityFramework.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\EntityFramework.SqlServer.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\EntityFramework.xml
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\EntityFramework.SqlServer.xml
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.csproj.AssemblyReference.cache
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.csproj.CoreCompileInputs.cache
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\obj\Debug\QuizLati.8B217594.Up2Date
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.dll
+C:\Users\AngelineCiang\Downloads\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.pdb
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\QuizLatihan.dll.config
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\QuizLatihan.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\QuizLatihan.pdb
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\csc.exe
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\csc.exe.config
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\csc.rsp
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\csi.exe
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\csi.exe.config
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\csi.rsp
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.AppContext.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Console.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.Compression.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Net.Http.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Net.Sockets.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.ValueTuple.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\vbc.exe
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\vbc.exe.config
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\vbc.rsp
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\VBCSCompiler.exe
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\EntityFramework.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\EntityFramework.SqlServer.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\EntityFramework.xml
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\EntityFramework.SqlServer.xml
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.csproj.AssemblyReference.cache
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.csproj.CoreCompileInputs.cache
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLati.8B217594.Up2Date
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.dll
+C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.pdb
