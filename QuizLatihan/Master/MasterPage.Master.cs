@@ -129,7 +129,7 @@ namespace QuizLatihan.Master
 
         protected void AddJewelBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/AddJewel.aspx");
+            Response.Redirect("~/Views/CreateJewel.aspx");
         }
 
         protected void ReportBtn_Click(object sender, EventArgs e)

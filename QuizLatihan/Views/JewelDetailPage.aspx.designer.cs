@@ -69,6 +69,15 @@ namespace QuizLatihan.Views
         protected global::System.Web.UI.WebControls.Label Lbl_BrandName;
 
         /// <summary>
+        /// Lbl_BrandClass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lbl_BrandClass;
+
+        /// <summary>
         /// Lbl_BrandCountry control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,15 @@ namespace QuizLatihan.Views
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Lbl_BrandCountry;
+
+        /// <summary>
+        /// Lbl_ReleaseYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lbl_ReleaseYear;
 
         /// <summary>
         /// Btn_AddToCart control.
