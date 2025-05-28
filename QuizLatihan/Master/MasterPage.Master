@@ -20,6 +20,8 @@
             <asp:Button ID="AddJewelBtn" runat="server" Text="Add Jewel" OnClick="AddJewelBtn_Click"/>
             <asp:Button ID="ReportBtn" runat="server" Text="Report" OnClick="ReportBtn_Click"/>
             <asp:Button ID="HandleOrderBtn" runat="server" Text="Handle Orders" OnClick="HandleOrderBtn_Click"/>
+            
+            <asp:Label ID="GreetingLabel" runat="server" Text="Label"></asp:Label>
         </div>
 
         <asp:ContentPlaceHolder ID="ContentBody" runat="server" />

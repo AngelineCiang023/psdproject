@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using QuizLatihan.Model;
 
 namespace QuizLatihan.Master
 {
@@ -59,6 +60,15 @@ namespace QuizLatihan.Master
                     LogoutBtn.Visible = true;
                 }
             }
+            if (Session["user"] != null)
+            {
+                var user = (MsUser)Session["user"];
+                GreetingLabel.Text = "Welcome, " + user.UserName;
+            }
+            else
+            {
+                GreetingLabel.Text = "";
+            }
 
         }
 
@@ -80,37 +90,56 @@ namespace QuizLatihan.Master
 
         protected void CartBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Cart.aspx");
+            Response.Redirect("~/Views/Cart.aspx");
         }
 
         protected void MyOrdersBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/MyOrders.aspx");
+            Response.Redirect("~/Views/MyOrders.aspx");
         }
 
         protected void ProfileBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Profile.aspx");
+            Response.Redirect("~/Views/Profile.aspx");
         }
 
         protected void LogoutBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/LogOut.aspx");
+            // Clear session
+            Session.Clear();
+            Session.Abandon();
+
+            // Hapus session cookie ASP.NET
+            if (Request.Cookies["ASP.NET_SessionId"] != null)
+            {
+                Response.Cookies["ASP.NET_SessionId"].Expires = DateTime.Now.AddDays(-1);
+            }
+
+            if (Request.Cookies["UserEmail"] != null)
+            {
+                Response.Cookies["UserEmail"].Expires = DateTime.Now.AddDays(-1);
+            }
+            if (Request.Cookies["UserPassword"] != null)
+            {
+                Response.Cookies["UserPassword"].Expires = DateTime.Now.AddDays(-1);
+            }
+
+            Response.Redirect("~/Views/Login.aspx");
         }
 
         protected void AddJewelBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AddJewel.aspx");
+            Response.Redirect("~/Views/AddJewel.aspx");
         }
 
         protected void ReportBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Report.aspx");
+            Response.Redirect("~/Views/Report.aspx");
         }
 
         protected void HandleOrderBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/HandleOrder.aspx");
+            Response.Redirect("~/Views/HandleOrder.aspx");
         }
     }
 }
