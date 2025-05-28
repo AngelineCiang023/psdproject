@@ -7,9 +7,9 @@ using System.Web;
 
 namespace QuizLatihan.Handler
 {
- 
+
     public class JewelHandler
-	{
+    {
         private JewelRepository _jewelRepository;
         private BrandRepository _brandRepository;
         private CategoryRepository _categoryRepository;
@@ -30,7 +30,7 @@ namespace QuizLatihan.Handler
         {
             try
             {
-                
+
                 return _jewelRepository.GetAllJewel();
             }
             catch (Exception ex)
