@@ -98,6 +98,11 @@ namespace QuizLatihan.Views
                     Validasi.Text = "Error occurred: " + ex.Message;
                 }
             }
-        }   
+        }
+
+        protected void Login_Btn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

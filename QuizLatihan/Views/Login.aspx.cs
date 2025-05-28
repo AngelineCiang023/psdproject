@@ -15,6 +15,7 @@ namespace QuizLatihan.Views
 		{
 			if (!IsPostBack)
 			{
+
 				if (Request.Cookies["UserEmail"] != null && Request.Cookies["UserPassword"] != null)
 				{
 					string Email = Request.Cookies["UserEmail"].Value;
@@ -38,14 +39,14 @@ namespace QuizLatihan.Views
 
 			if(string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
 			{
-				lblError.Text = "Email and Password mus be filled.";
+				lblError.Text = "Email and Password must be filled.";
 				return; 
 			}
 
 			var user = db.MsUsers.FirstOrDefault(u => u.UserEmail == Email);
 			if(user == null)
 			{
-				lblError.Text = "Email is not registered";
+				lblError.Text = "Email is not registered, please Register!";
 				return;
 			}
 
@@ -73,6 +74,11 @@ namespace QuizLatihan.Views
 			}
 
 			Response.Redirect("HomePage.aspx");
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+			Response.Redirect("Register.aspx");
         }
     }
 }
