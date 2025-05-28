@@ -187,3 +187,7 @@ C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\Q
 C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLati.8B217594.Up2Date
 C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.dll
 C:\Users\AngelineCiang\Documents\QuizLatihan\QuizLatihan\QuizLatihan\obj\Debug\QuizLatihan.pdb
+C:\Users\hp\source\repos\AngelineCiang023\psdproject\QuizLatihan\obj\Debug\QuizLatihan.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\AngelineCiang023\psdproject\QuizLatihan\obj\Debug\QuizLatihan.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\AngelineCiang023\psdproject\QuizLatihan\obj\Debug\QuizLatihan.dll
+C:\Users\hp\source\repos\AngelineCiang023\psdproject\QuizLatihan\obj\Debug\QuizLatihan.pdb

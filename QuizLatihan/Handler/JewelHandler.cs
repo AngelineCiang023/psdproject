@@ -1,49 +1,91 @@
-﻿using QuizLatihan.Model;
-using QuizLatihan.Repository;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using QuizLatihan.Model;
 
 namespace QuizLatihan.Handler
 {
- 
     public class JewelHandler
-	{
-        private JewelRepository _jewelRepository;
-
-        public JewelHandler()
-        {
-            _jewelRepository = new JewelRepository();
-        }
-
-        public List<MsJewel> GetAllJewels()
+    {
+        public static bool CreateJewel(TblJewel jewel)
         {
             try
             {
-                
-                return _jewelRepository.GetAllJewel();
+                using (var db = new Model1Entities())
+                {
+                    db.TblJewels.Add(jewel);
+                    db.SaveChanges();
+                    return true;
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception("Error retrieving all jewels.", ex);
+                return false;
             }
         }
 
-        public object GetJewelByIdWithDetails(int jewelId)
+        public static List<TblJewel> GetAllJewels()
+        {
+            using (var db = new Model1Entities())
+            {
+                return db.TblJewels.ToList();
+            }
+        }
+
+        public static TblJewel GetJewelById(int id)
+        {
+            using (var db = new Model1Entities())
+            {
+                return db.TblJewels.Find(id);
+            }
+        }
+
+        public static bool UpdateJewel(TblJewel updatedJewel)
         {
             try
             {
-                return _jewelRepository.GetJewelByIdWithDetails(jewelId);
+                using (var db = new Model1Entities())
+                {
+                    var existing = db.TblJewels.Find(updatedJewel.JewelID);
+                    if (existing != null)
+                    {
+                        existing.JewelName = updatedJewel.JewelName;
+                        existing.JewelPrice = updatedJewel.JewelPrice;
+                        existing.JewelStock = updatedJewel.JewelStock;
+                        existing.CategoryID = updatedJewel.CategoryID;
+                        existing.BrandID = updatedJewel.BrandID;
+                        db.SaveChanges();
+                        return true;
+                    }
+                    return false;
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception("Error retrieving jewel by ID.", ex);
+                return false;
             }
         }
 
-
+        public static bool DeleteJewel(int id)
+        {
+            try
+            {
+                using (var db = new Model1Entities())
+                {
+                    var jewel = db.TblJewels.Find(id);
+                    if (jewel != null)
+                    {
+                        db.TblJewels.Remove(jewel);
+                        db.SaveChanges();
+                        return true;
+                    }
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
-
-
 }

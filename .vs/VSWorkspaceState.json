@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\QuizLatihan"
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1",
+    "\\QuizLatihan",
+    "\\QuizLatihan\\Controllers",
+    "\\QuizLatihan\\Handler",
+    "\\QuizLatihan\\Model"
   ],
-  "SelectedNode": "\\QuizLatihan.sln",
+  "SelectedNode": "\\QuizLatihan\\Model\\TransactionDetail.cs",
   "PreviewInSolutionExplorer": false
 }
