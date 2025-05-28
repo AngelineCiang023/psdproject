@@ -12,6 +12,12 @@ namespace QuizLatihan.Repository
 	{
 		static LocalDatabaseEntities2 db = new LocalDatabaseEntities2();
 
+        public void Add(MsJewel jewel)
+        {
+            db.MsJewels.Add(jewel);
+            db.SaveChanges();
+        }
+
 		public List<MsJewel> GetAllJewel()
 		{
 			return db.MsJewels.ToList();
@@ -20,10 +26,30 @@ namespace QuizLatihan.Repository
         public MsJewel GetJewelByIdWithDetails(int id)
         {
             return db.MsJewels
-                .Include(j => j.MsCategory)  // Use lambda expression for related entity
-                .Include(j => j.MsBrand)     // Use lambda expression for related entity
+                .Include(j => j.MsCategory) 
+                .Include(j => j.MsBrand)    
                 .FirstOrDefault(j => j.JewelID == id);
         }
+
+        public void UpdateJewel(MsJewel jewel)
+        {
+            var existingJewel = db.MsJewels.FirstOrDefault(j => j.JewelID == jewel.JewelID);
+            if (existingJewel != null)
+            {
+                existingJewel.JewelName = jewel.JewelName;
+                existingJewel.CategoryID = jewel.CategoryID;
+                existingJewel.BrandID = jewel.BrandID;
+                existingJewel.JewelPrice = jewel.JewelPrice;
+                existingJewel.JewelReleaseYear = jewel.JewelReleaseYear;
+
+                db.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Jewel not found");
+            }
+        }
+
 
     }
 }

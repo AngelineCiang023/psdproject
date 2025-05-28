@@ -1,4 +1,6 @@
-﻿using QuizLatihan.Handler;
+﻿using QuizLatihan.Controller;
+using QuizLatihan.Handler;
+using QuizLatihan.Model;
 using QuizLatihan.Repository;
 using System;
 using System.Collections.Generic;
@@ -11,39 +13,20 @@ namespace QuizLatihan.Views
 {
 	public partial class JewelDetailPage : System.Web.UI.Page
 	{
-        JewelHandler jewelHandler = new JewelHandler();
-        JewelRepository jewelRepository = new JewelRepository();
+        private JewelController jewelController = new JewelController();
         protected void Page_Load(object sender, EventArgs e)
 		{
-            if (Request.QueryString["id"] != null)
+            if (!IsPostBack && Request.QueryString["id"] != null)
             {
-                // Ambil ID dari query string
                 int jewelId = int.Parse(Request.QueryString["id"]);
-
-                // Panggil method GetJewelByIdWithDetails pada instance jewelRepository
-                var jewel = jewelRepository.GetJewelByIdWithDetails(jewelId);
-
-                if (jewel != null)
-                {
-                    // Tampilkan data jewel ke Label
-                    Lbl_JewelID.Text = "JewelID: " + jewel.JewelID;
-                    Lbl_JewelName.Text = "JewelName: " + jewel.JewelName;
-                    Lbl_JewelPrice.Text = "JewelPrice: " + jewel.JewelPrice.ToString("C");
-                    Lbl_CategoryName.Text = "CategoryName: " + jewel.MsCategory.CategoryName;
-                    Lbl_BrandName.Text = "BrandName: " + jewel.MsBrand.BrandName;
-                    Lbl_BrandCountry.Text = "BrandCountry: " + jewel.MsBrand.BrandCountry;
-                }
-                else
-                {
-                    // Jika jewel tidak ditemukan
-                    Response.Write("<script>alert('Jewel tidak ditemukan!');</script>");
-                }
+                LoadJewelDetails(jewelId);
             }
         }
 
         protected void Btn_Edit_Click(object sender, EventArgs e)
         {
-
+            int jewelId = int.Parse(Request.QueryString["id"]);
+            Response.Redirect("UpdateJewel.aspx?id=" + jewelId);
         }
 
         protected void Btn_Delete_Click(object sender, EventArgs e)
@@ -54,6 +37,22 @@ namespace QuizLatihan.Views
         protected void Btn_AddToCart_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoadJewelDetails(int jewelId)
+        {
+            MsJewel jewel = jewelController.GetJewelById(jewelId);
+            if (jewel != null)
+            {
+                Lbl_JewelID.Text = "Jewel ID: " + jewel.JewelID;
+                Lbl_JewelName.Text = "Jewel Name: " + jewel.JewelName;
+                Lbl_JewelPrice.Text = "Jewel Price: $" + jewel.JewelPrice;
+                Lbl_CategoryName.Text = "Category Name: " + jewel.MsCategory.CategoryName;
+                Lbl_BrandName.Text = "Brand Name: " + jewel.MsBrand.BrandName;
+                Lbl_BrandCountry.Text = "Brand Country: " + jewel.MsBrand.BrandCountry;
+                Lbl_BrandClass.Text = "Brand Class: " + jewel.MsBrand.BrandClass;
+                Lbl_ReleaseYear.Text = "Release Year: " + jewel.JewelReleaseYear;
+            }
         }
     }
 }
