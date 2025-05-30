@@ -50,6 +50,19 @@ namespace QuizLatihan.Repository
             }
         }
 
+        public void DeleteJewel(int jewelId)
+        {
+            using (var db = new LocalDatabaseEntities2())
+            {
+                MsJewel jewel = db.MsJewels.Find(jewelId);
+                if (jewel != null)
+                {
+                    db.MsJewels.Remove(jewel);
+                    db.SaveChanges();
+                }
+            }
+        }
+
 
     }
 }

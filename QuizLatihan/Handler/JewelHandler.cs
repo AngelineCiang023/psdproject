@@ -64,6 +64,18 @@ namespace QuizLatihan.Handler
             }
         }
 
+        public void DeleteJewel(int jewelId)
+        {
+            try
+            {
+                _jewelRepository.DeleteJewel(jewelId);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("error deleting jewel.", ex);
+            }
+        }
+
 
     }
 

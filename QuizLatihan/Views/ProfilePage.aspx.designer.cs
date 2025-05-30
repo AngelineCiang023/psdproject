@@ -11,79 +11,79 @@ namespace QuizLatihan.Views
 {
 
 
-    public partial class Login
+    public partial class ProfilePage
     {
 
         /// <summary>
-        /// lblEmail control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmail;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
 
         /// <summary>
-        /// txtEmail control.
+        /// lblWelcome1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.Label lblWelcome1;
 
         /// <summary>
-        /// lblPassword control.
+        /// txtOldPassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtOldPassword1;
 
         /// <summary>
-        /// txtPassword control.
+        /// txtNewPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtNewPassword;
 
         /// <summary>
-        /// chkRemember control.
+        /// txtConfirmPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkRemember;
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
 
         /// <summary>
-        /// btnLogin control.
+        /// BtnChangePassword1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.Button BtnChangePassword1;
 
         /// <summary>
-        /// btnRegister control.
+        /// BtnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegister;
+        protected global::System.Web.UI.WebControls.Button BtnBack;
 
         /// <summary>
-        /// lblError control.
+        /// lblMessage1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.Label lblMessage1;
     }
 }

@@ -25,8 +25,8 @@ namespace QuizLatihan.Views
 					if (user != null)
 					{
 						Session["user"] = user;
-						Session["role"] = user.UserRole;
-						Response.Redirect("HomePage.aspx");
+                        Session["UserRole"] = user.UserRole;
+                        Response.Redirect("HomePage.aspx");
 					}
 				}
 			}
@@ -58,7 +58,7 @@ namespace QuizLatihan.Views
 
 			//login berhasil
 			Session["user"] = user;
-			Session["role"] = user.UserRole;
+			Session["UserRole"] = user.UserRole;
 
 			//jika rememberme dicentang, cookie disimpan otomatis
 			if (chkRemember.Checked)
@@ -73,7 +73,7 @@ namespace QuizLatihan.Views
 				Response.Cookies.Add(passCookie);
 			}
 
-			Response.Redirect("HomePage.aspx");
+			Response.Redirect("~/Views/HomePage.aspx");
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
