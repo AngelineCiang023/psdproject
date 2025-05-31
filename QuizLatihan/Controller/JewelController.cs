@@ -85,6 +85,10 @@ namespace QuizLatihan.Controller
                 return "Update failed: " + ex.Message;
             }
         }
+        public void DeleteJewel(int id)
+        {
+            jewelHandler.DeleteJewel(id);
+        }
 
     }
 
