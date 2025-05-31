@@ -31,9 +31,7 @@ namespace QuizLatihan.Views
 
         protected void Btn_Delete_Click(object sender, EventArgs e)
         {
-            int jewelId =int.Parse(Request.QueryString["id"]);
-            jewelController.DeleteJewel(jewelId);
-            Response.Redirect("Homepage.aspx");
+
         }
 
         protected void Btn_AddToCart_Click(object sender, EventArgs e)
