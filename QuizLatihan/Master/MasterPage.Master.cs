@@ -100,7 +100,7 @@ namespace QuizLatihan.Master
 
         protected void ProfileBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Profile.aspx");
+            Response.Redirect("~/Views/profilePage.aspx");
         }
 
         protected void LogoutBtn_Click(object sender, EventArgs e)
