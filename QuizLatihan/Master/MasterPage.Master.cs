@@ -90,7 +90,7 @@ namespace QuizLatihan.Master
 
         protected void CartBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Cart.aspx");
+            Response.Redirect("~/Views/CartPage.aspx");
         }
 
         protected void MyOrdersBtn_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using QuizLatihan.Model;
 using QuizLatihan.Repository;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -38,7 +39,53 @@ namespace QuizLatihan.Views
 
         protected void Btn_AddToCart_Click(object sender, EventArgs e)
         {
+            if (Session["userID"] == null)
+            {
+                // Pastikan user sudah login
+                Response.Redirect("~/Views/Login.aspx");
+                return;
+            }
 
+            int userId = Convert.ToInt32(Session["userID"]);
+
+            if (!int.TryParse(Request.QueryString["id"], out int jewelId))
+            {
+                lblMessage.Text = "Invalid jewel ID.";
+                return;
+            }
+
+            using (LocalDatabaseEntities2 db = new LocalDatabaseEntities2())
+            {
+                var existingCart = db.Carts.FirstOrDefault(c => c.UserID == userId && c.JewelID == jewelId);
+                if (existingCart != null)
+                {
+                    existingCart.Quantity += 1;
+                }
+                else
+                {
+                    var cart = new Cart
+                    {
+                        UserID = userId,
+                        JewelID = jewelId,
+                        Quantity = 1
+                    };
+                    db.Carts.Add(cart);
+                }
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch (DbUpdateException ex)
+                {
+                    var inner = ex.InnerException?.InnerException;
+                    if (inner != null)
+                        lblMessage.Text = "DB error: " + inner.Message;
+                    else
+                        lblMessage.Text = "DB error: " + ex.Message;
+                    return; 
+                }
+            }
+            Response.Redirect("~/Views/CartPage.aspx");
         }
 
         private void LoadJewelDetails(int jewelId)

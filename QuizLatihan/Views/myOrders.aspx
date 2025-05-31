@@ -22,6 +22,7 @@
 <body>
     <form id="form1" runat="server">
         <h2>My Orders</h2>
+        <asp:Label ID="lblMessage" runat="server" ForeColor="Red" />
         <asp:GridView ID="gvOrders" runat="server" AutoGenerateColumns="false" OnRowCommand="gvOrders_RowCommand" OnRowDataBound="gvOrders_RowDataBound">
             <Columns>
                 <asp:BoundField DataField="TransactionID" HeaderText="Transaction ID" />

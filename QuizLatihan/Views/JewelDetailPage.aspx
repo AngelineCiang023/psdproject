@@ -28,6 +28,8 @@
             <br />
             <asp:Button ID="Btn_AddToCart" runat="server" Text="Add To Cart" OnClick="Btn_AddToCart_Click" />
             <br />
+            <asp:Label ID="lblMessage" runat="server" ForeColor="Red" />
+            <br />
             <asp:Button ID="Btn_Edit" runat="server" Text="Edit" OnClick="Btn_Edit_Click" />
             <br />
             <asp:Button ID="Btn_Delete" runat="server" Text="Delete" OnClick="Btn_Delete_Click" />

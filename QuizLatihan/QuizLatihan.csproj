@@ -90,6 +90,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Views\CartPage.aspx" />
     <Content Include="Views\CreateJewel.aspx" />
     <Content Include="Views\HomePage.aspx" />
     <Content Include="Views\JewelDetailPage.aspx" />
@@ -155,6 +156,13 @@
     <Compile Include="Repository\CategoryRepository.cs" />
     <Compile Include="Repository\JewelRepository.cs" />
     <Compile Include="Repository\transactionRepository.cs" />
+    <Compile Include="Views\CartPage.aspx.cs">
+      <DependentUpon>CartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CartPage.aspx.designer.cs">
+      <DependentUpon>CartPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\CreateJewel.aspx.cs">
       <DependentUpon>CreateJewel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

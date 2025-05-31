@@ -28,20 +28,28 @@ namespace QuizLatihan.Views
 
         private void LoadOrders()
         {
-            int userId = 1;
+            int userId = Session["userID"] != null ? Convert.ToInt32(Session["userID"]) : 0;
+            if (userId == 0)
+            {
+                Response.Redirect("Login.aspx");
+                return;
+            }
+
             var orders = handler.GetOrdersByUser(userId);
 
             if (orders == null || orders.Count == 0)
             {
-                Response.Write("Tidak ada data transaksi untuk user " + userId + "<br/>");
+                lblMessage.Text = "Tidak ada data transaksi untuk user " + userId;
+                gvOrders.DataSource = null;
+                gvOrders.DataBind();
             }
             else
             {
-                Response.Write($"Jumlah transaksi: {orders.Count}<br/>");
+                lblMessage.Text = $"Jumlah transaksi: {orders.Count}";
+                gvOrders.DataSource = orders;
+                gvOrders.DataBind();
             }
-
-            gvOrders.DataSource = orders;
-            gvOrders.DataBind();
+            lblMessage.Text = "Tidak ada data transaksi untuk user " + userId;
         }
 
         protected void gvOrders_RowDataBound(object sender, GridViewRowEventArgs e)
