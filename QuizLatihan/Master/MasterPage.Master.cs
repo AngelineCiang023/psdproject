@@ -22,44 +22,43 @@ namespace QuizLatihan.Master
         public Button AddJewelButton => AddJewelBtn;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            // Pindahkan ke luar dari IsPostBack!
+            LoginBtn.Visible = false;
+            RegisterBtn.Visible = false;
+            CartBtn.Visible = false;
+            MyOrdersBtn.Visible = false;
+            ProfileBtn.Visible = false;
+            LogoutBtn.Visible = false;
+            AddJewelBtn.Visible = false;
+            ReportBtn.Visible = false;
+            HandleOrderBtn.Visible = false;
+            HomeBtn.Visible = true;
+
+            string role = Session["UserRole"] as string;
+
+            if (role == null)
             {
-                string role = Session["role"] as string;
-
-                LoginBtn.Visible = false;
-                RegisterBtn.Visible = false;
-                CartBtn.Visible = false;
-                MyOrdersBtn.Visible = false;
-                ProfileBtn.Visible = false;
-                LogoutBtn.Visible = false;
-                AddJewelBtn.Visible = false;
-                ReportBtn.Visible = false;
-                HandleOrderBtn.Visible = false;
-
-                HomeBtn.Visible = true;
-
-                if (role == null)
-                {
-                    //for guest
-                    LoginBtn.Visible = true;
-                    RegisterBtn.Visible = true;
-                }
-                else if (role == "Customer")
-                {
-                    CartBtn.Visible = true;
-                    MyOrdersBtn.Visible = true;
-                    ProfileBtn.Visible = true;
-                    LogoutBtn.Visible = true;
-                }
-                else if (role == "Admin")
-                {
-                    AddJewelBtn.Visible = true;
-                    ReportBtn.Visible = true;
-                    HandleOrderBtn.Visible = true;
-                    ProfileBtn.Visible = true;
-                    LogoutBtn.Visible = true;
-                }
+                // Guest
+                LoginBtn.Visible = true;
+                RegisterBtn.Visible = true;
             }
+            else if (role == "Customer")
+            {
+                CartBtn.Visible = true;
+                MyOrdersBtn.Visible = true;
+                ProfileBtn.Visible = true;
+                LogoutBtn.Visible = true;
+            }
+            else if (role == "Admin")
+            {
+                AddJewelBtn.Visible = true;
+                ReportBtn.Visible = true;
+                HandleOrderBtn.Visible = true;
+                ProfileBtn.Visible = true;
+                LogoutBtn.Visible = true;
+            }
+
+            // Greeting tetap boleh di luar
             if (Session["user"] != null)
             {
                 var user = (MsUser)Session["user"];
@@ -69,13 +68,11 @@ namespace QuizLatihan.Master
             {
                 GreetingLabel.Text = "";
             }
-
         }
-
 
         protected void HomeBtn_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Homepage.aspx");
+            Response.Redirect("~/Views/HomePage.aspx");
         }
 
         protected void LoginBtn_Click1(object sender, EventArgs e)
@@ -100,7 +97,7 @@ namespace QuizLatihan.Master
 
         protected void ProfileBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Profile.aspx");
+            Response.Redirect("~/Views/ProfilePage.aspx");
         }
 
         protected void LogoutBtn_Click(object sender, EventArgs e)
