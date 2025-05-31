@@ -1,1 +1,3 @@
-.vs/ 
+.vs/
+*.mdf
+QuizLatihan/App_Data/
