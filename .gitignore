@@ -1,7 +1,9 @@
-.vs/
+# Ignore build artifacts
 bin/
 obj/
-*.suo
-*.user
+*.dll
+*.pdb
+*.mdf
+*.ldf
 *.cache
-
+*.log
