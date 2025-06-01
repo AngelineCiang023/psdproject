@@ -1,6 +1,7 @@
 ﻿using QuizLatihan.Factory;
 using QuizLatihan.Handler;
 using QuizLatihan.Model;
+using QuizLatihan.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ using System.Web;
 
 namespace QuizLatihan.Controller
 {
-	public class JewelController
+   
+    public class JewelController
 	{
 		private JewelHandler jewelHandler = new JewelHandler();
 		private BrandHandler brandHandler = new BrandHandler();
@@ -85,6 +87,13 @@ namespace QuizLatihan.Controller
                 return "Update failed: " + ex.Message;
             }
         }
+
+        public void DeleteJewel(int id)
+        {
+            JewelRepository repo = new JewelRepository();
+            repo.DeleteJewel(id);
+        }
+        
 
     }
 

@@ -90,7 +90,7 @@ namespace QuizLatihan.Master
 
         protected void CartBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Cart.aspx");
+            Response.Redirect("~/Views/CartPage.aspx");
         }
 
         protected void MyOrdersBtn_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace QuizLatihan.Master
 
         protected void ProfileBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Profile.aspx");
+            Response.Redirect("~/Views/profilePage.aspx");
         }
 
         protected void LogoutBtn_Click(object sender, EventArgs e)
@@ -134,12 +134,12 @@ namespace QuizLatihan.Master
 
         protected void ReportBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Report.aspx");
+            Response.Redirect("~/Views/Reports.aspx");
         }
 
         protected void HandleOrderBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/HandleOrder.aspx");
+            Response.Redirect("~/Views/HandleOrders.aspx");
         }
     }
 }
