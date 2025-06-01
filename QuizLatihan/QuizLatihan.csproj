@@ -109,10 +109,7 @@
     <Compile Include="Handler\BrandHandler.cs" />
     <Compile Include="Handler\CategoryHandler.cs" />
     <Compile Include="Handler\JewelHandler.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Handler\ReportHandler.cs" />
->>>>>>> origin/cita-HandlenReportv2
     <Compile Include="Handler\TransactionHandler.cs" />
     <Compile Include="Master\MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -161,8 +158,6 @@
     <Compile Include="Repository\BrandRepository.cs" />
     <Compile Include="Repository\CategoryRepository.cs" />
     <Compile Include="Repository\JewelRepository.cs" />
-<<<<<<< HEAD
-    <Compile Include="Repository\transactionRepository.cs" />
     <Compile Include="Views\CartPage.aspx.cs">
       <DependentUpon>CartPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,9 +165,7 @@
     <Compile Include="Views\CartPage.aspx.designer.cs">
       <DependentUpon>CartPage.aspx</DependentUpon>
     </Compile>
-=======
     <Compile Include="Repository\TransactionRepository.cs" />
->>>>>>> origin/cita-HandlenReportv2
     <Compile Include="Views\CreateJewel.aspx.cs">
       <DependentUpon>CreateJewel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

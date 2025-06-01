@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using QuizLatihan.Handler;
+using QuizLatihan.Repository;
 using TransactionHandler = QuizLatihan.Handler.TransactionHandler;
 
 
@@ -15,13 +16,13 @@ namespace QuizLatihan.Views
 {
     public partial class myOrders : System.Web.UI.Page
     {
-        private TransactionHandler handler = new TransactionHandler();
+        private TransactionHandler handler = new TransactionHandler(new TransactionRepository());
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                Response.Write("LoadOrders dipanggil<br/>");
+                Response.Write("<br/>");
                 LoadOrders();
             }
         }

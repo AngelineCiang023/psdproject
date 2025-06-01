@@ -134,12 +134,12 @@ namespace QuizLatihan.Master
 
         protected void ReportBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/Report.aspx");
+            Response.Redirect("~/Views/Reports.aspx");
         }
 
         protected void HandleOrderBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Views/HandleOrder.aspx");
+            Response.Redirect("~/Views/HandleOrders.aspx");
         }
     }
 }
