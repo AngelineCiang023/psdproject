@@ -1,4 +1,4 @@
-using QuizLatihan.Model;
+﻿using QuizLatihan.Model;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,6 +7,7 @@ namespace QuizLatihan.Repository
 {
     public interface ITransactionRepository
     {
+        TransactionHeader GetTransactionByIdWithDetails(int id);
         List<TransactionHeader> GetTransactionsByStatusNot(List<string> excludedStatus);
         void UpdateTransactionStatus(int transactionId, string newStatus);
         List<TransactionHeader> GetTransactionsByStatus(string status);
@@ -50,18 +51,11 @@ namespace QuizLatihan.Repository
                 .ToList();
         }
 
-        public TransactionHeader GetTransactionById(int id)
+        public TransactionHeader GetTransactionByIdWithDetails(int id)
         {
             return _db.TransactionHeaders
-                .Where(t => t.TransactionID == id)
-                .SelectMany(t => t.TransactionDetails)
-                .Select(td => new TransactionDetailViewModel
-                {
-                    TransactionID = td.TransactionID,
-                    JewelName = td.MsJewel.JewelName,
-                    Quantity = td.Quantity
-                })
-                .ToList();
+                .Include(t => t.TransactionDetails.Select(td => td.MsJewel))
+                .FirstOrDefault(t => t.TransactionID == id);
         }
     }
 }

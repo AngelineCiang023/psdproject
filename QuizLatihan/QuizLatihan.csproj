@@ -100,15 +100,18 @@
     <Content Include="Views\profilePage.aspx" />
     <Content Include="Views\Register.aspx" />
     <Content Include="Views\Reports.aspx" />
+    <Content Include="Views\TransactionDetails.aspx" />
     <Content Include="Views\UpdateJewel.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\JewelController.cs" />
+    <Compile Include="Controller\ProfileController.cs" />
     <Compile Include="Factory\JewelFactory.cs" />
     <Compile Include="Handler\BrandHandler.cs" />
     <Compile Include="Handler\CategoryHandler.cs" />
     <Compile Include="Handler\JewelHandler.cs" />
+    <Compile Include="Handler\ProfileHandler.cs" />
     <Compile Include="Handler\ReportHandler.cs" />
     <Compile Include="Handler\TransactionHandler.cs" />
     <Compile Include="Master\MasterPage.Master.cs">
@@ -157,7 +160,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BrandRepository.cs" />
     <Compile Include="Repository\CategoryRepository.cs" />
+    <Compile Include="Repository\IUserRepository.cs" />
     <Compile Include="Repository\JewelRepository.cs" />
+    <Compile Include="Repository\UserProfileRepository.cs" />
     <Compile Include="Views\CartPage.aspx.cs">
       <DependentUpon>CartPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -228,6 +233,13 @@
     </Compile>
     <Compile Include="Views\Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransactionDetails.aspx.cs">
+      <DependentUpon>TransactionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TransactionDetails.aspx.designer.cs">
+      <DependentUpon>TransactionDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\UpdateJewel.aspx.cs">
       <DependentUpon>UpdateJewel.aspx</DependentUpon>

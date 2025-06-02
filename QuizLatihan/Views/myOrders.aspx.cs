@@ -22,7 +22,7 @@ namespace QuizLatihan.Views
         {
             if (!IsPostBack)
             {
-                Response.Write("<br/>");
+                Response.Write("");
                 LoadOrders();
             }
         }

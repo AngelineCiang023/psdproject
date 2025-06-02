@@ -1,35 +1,35 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="profilePage.aspx.cs" Inherits="QuizLatihan.Views.profilePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/MasterPage.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="QuizLatihan.Views.Profile" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
 
-<!DOCTYPE html>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="server">
+       <div>
+       <h1>My Profile</h1>
+       <div>
+           <asp:Label ID="lblUsername" runat="server" Text="Username: "></asp:Label><br />
+           <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label><br />
+           <asp:Label ID="lblGender" runat="server" Text="Gender: "></asp:Label><br />
+           <asp:Label ID="lblDOB" runat="server" Text="Date of Birth: "></asp:Label><br />
+       </div>
+       <hr />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Profile Page</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <h2>My Profile</h2>
-        <asp:Label ID="LblWelcome" runat="server" Font-Bold="true" />
+       <h3>Change Your Password</h3>
+       <div >
+           <asp:Label ID="lblOldPassword" runat="server" Text="Enter Old Password: " />
+           <asp:TextBox ID="txtOldPassword" runat="server" TextMode="Password" /><br />
+       </div>
 
-        <h3>Change Password</h3>
-        <table>
-            <tr>
-                <td>Old Password</td>
-                <td><asp:TextBox ID="txtOldPassword" runat="server" TextMode="Password" /></td>
-            </tr>
-            <tr>
-                <td>New Password</td>
-                <td><asp:TextBox ID="txtNewPassword" runat="server" TextMode="Password" /></td>
-            </tr>
-            <tr>
-                <td>Confirm Password</td>
-               <td><asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" /></td>
-            </tr>
-        </table>
-        <asp:Button ID="btnChangePassword" runat="server" Text="Change Password" OnClick="btnChangePassword_Click" />
-        <asp:Button ID="Btnback" runat="server" Text="Back" Onclick="Btnback_Click" />
-        <br />
-        <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
-    </form>
-</body>
-</html>
+       <div>
+           <asp:Label ID="lblNewPassword" runat="server" Text="Enter New Password: " />
+           <asp:TextBox ID="txtNewPassword" runat="server" TextMode="Password" /><br />
+       </div>
+       <div>
+           <asp:Label ID="lblConfirmPassword" runat="server" Text="Confirm New Password: " />
+           <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" /><br /><br />
+       </div>
+
+       <asp:Button ID="btnChangePassword" runat="server" Text="Change Password" OnClick="btnChangePassword_Click" />
+       <br /><br />
+       <asp:Label ID="lblMessage" runat="server" ForeColor="Red" />
+   </div>
+</asp:Content>
