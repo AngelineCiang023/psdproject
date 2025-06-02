@@ -7,7 +7,7 @@ namespace QuizLatihan.Repository
 {
     public interface ITransactionRepository
     {
-        TransactionHeader GetTransactionByIdWithDetails(int id);
+        TransactionHeader GetTransactionById(int id);
         List<TransactionHeader> GetTransactionsByStatusNot(List<string> excludedStatus);
         void UpdateTransactionStatus(int transactionId, string newStatus);
         List<TransactionHeader> GetTransactionsByStatus(string status);
