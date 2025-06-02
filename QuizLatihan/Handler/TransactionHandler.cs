@@ -30,5 +30,10 @@ namespace QuizLatihan.Handler
         {
             _transactionRepo.UpdateTransactionStatus(transactionId, newStatus);
         }
+
+        public TransactionHeader GetTransactionById(int id)
+        {
+            return _transactionRepo.GetTransactionById(id);
+        }
     }
 }
