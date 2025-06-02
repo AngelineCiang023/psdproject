@@ -1,6 +1,6 @@
-using QuizLatihan.Model;
+﻿using QuizLatihan.Model;
 using System.Collections.Generic;
-using System.Data.Entity;  
+using System.Data.Entity;
 using System.Linq;
 
 namespace QuizLatihan.Repository
@@ -10,6 +10,7 @@ namespace QuizLatihan.Repository
         List<TransactionHeader> GetTransactionsByStatusNot(List<string> excludedStatus);
         void UpdateTransactionStatus(int transactionId, string newStatus);
         List<TransactionHeader> GetTransactionsByStatus(string status);
+        List<TransactionHeader> GetTransactionsByUser(int userId);
     }
 
     public class TransactionRepository : ITransactionRepository
@@ -37,8 +38,23 @@ namespace QuizLatihan.Repository
         {
             return _db.TransactionHeaders
                       .Where(t => t.TransactionStatus == status)
-                      .Include(t => t.TransactionDetails)  
+                      .Include(t => t.TransactionDetails)
                       .ToList();
+        }
+
+        public List<TransactionHeader> GetTransactionsByUser(int userId)
+        {
+            return _db.TransactionHeaders
+                .Where(t => t.UserID == userId)
+                .Include(t => t.TransactionDetails)
+                .ToList();
+        }
+
+        public TransactionHeader GetTransactionById(int id)
+        {
+            return _db.TransactionHeaders
+                     .Include(t => t.TransactionDetails.Select(td => td.MsJewel))
+                     .FirstOrDefault(t => t.TransactionID == id);
         }
     }
 }

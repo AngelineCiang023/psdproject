@@ -12,6 +12,11 @@ namespace QuizLatihan.Views
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Role"] == null || Session["Role"].ToString() != "Admin")
+            {
+                Response.Redirect("Homepage.aspx");
+                return;
+            }
             try
             {
                 _handler = new TransactionHandler(new TransactionRepository());
@@ -62,6 +67,10 @@ namespace QuizLatihan.Views
                 {
                     _handler.UpdateTransactionStatus(transactionId, "Arrived");
                 }
+                else if (e.CommandName == "Reject")
+                {
+                    _handler.UpdateTransactionStatus(transactionId, "Rejected");
+                }
 
                 BindTransactionData();
             }
@@ -69,6 +78,26 @@ namespace QuizLatihan.Views
             {
                 Response.Write("<p style='color:red;'>Error updating transaction: " + ex.Message + "</p>");
             }
+        }
+
+        protected string GetActionText(string status)
+        {
+            if (status == "Payment Pending") return "Confirm Payment";
+            if (status == "Shipment Pending") return "Ship Package";
+            if (status == "Arrived") return "Waiting for user confirmation...";
+            return "";
+        }
+
+        protected string GetActionCommand(string status)
+        {
+            if (status == "Payment Pending") return "ConfirmPayment";
+            if (status == "Shipment Pending") return "ShipPackage";
+            return "";
+        }
+
+        protected bool ShowActionButton(string status)
+        {
+            return status == "Payment Pending" || status == "Shipment Pending";
         }
     }
 }
