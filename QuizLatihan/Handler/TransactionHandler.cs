@@ -31,9 +31,20 @@ namespace QuizLatihan.Handler
             _transactionRepo.UpdateTransactionStatus(transactionId, newStatus);
         }
 
-        public TransactionHeader GetTransactionById(int id)
+        public List<object> GetTransactionDetailsById(int id)
         {
-            return _transactionRepo.GetTransactionById(id);
+            var transaction = _transactionRepo.GetTransactionByIdWithDetails(id);
+            if (transaction == null)
+                return new List<object>();
+
+            return transaction.TransactionDetails
+                .Select(td => new
+                {
+                    TransactionID = td.TransactionID,
+                    JewelName = td.MsJewel.JewelName,
+                    Quantity = td.Quantity
+                })
+                .ToList<object>();
         }
     }
 }

@@ -10,6 +10,7 @@
             border-collapse: collapse;
             padding: 8px;
         }
+
         th {
             background-color: #f2f2f2;
         }
@@ -25,36 +26,23 @@
                 <asp:BoundField DataField="TransactionStatus" HeaderText="Status" />
                 <asp:TemplateField HeaderText="Action">
                     <ItemTemplate>
+                        <%-- Button untuk Confirm atau Ship --%>
                         <asp:Button ID="btnAction" runat="server"
                             Text='<%# GetActionText(Eval("TransactionStatus").ToString()) %>'
                             CommandName='<%# GetActionCommand(Eval("TransactionStatus").ToString()) %>'
                             CommandArgument='<%# Container.DataItemIndex %>'
                             Visible='<%# ShowActionButton(Eval("TransactionStatus").ToString()) %>' />
+
+                        <%-- Button untuk Reject --%>
+                        <asp:Button ID="btnReject" runat="server"
+                            Text="Reject"
+                            CommandName="Reject"
+                            CommandArgument='<%# Container.DataItemIndex %>'
+                            Visible='<%# Eval("TransactionStatus").ToString() == "Payment Pending" %>' />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
     </form>
-
-    <script runat="server">
-        protected string GetActionText(string status)
-        {
-            if (status == "Payment Pending") return "Confirm Payment";
-            if (status == "Shipment Pending") return "Ship Package";
-            return "";
-        }
-
-        protected string GetActionCommand(string status)
-        {
-            if (status == "Payment Pending") return "ConfirmPayment";
-            if (status == "Shipment Pending") return "ShipPackage";
-            return "";
-        }
-
-        protected bool ShowActionButton(string status)
-        {
-            return status == "Payment Pending" || status == "Shipment Pending";
-        }
-    </script>
 </body>
 </html>
