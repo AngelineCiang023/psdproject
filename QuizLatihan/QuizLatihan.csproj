@@ -99,7 +99,6 @@
     <Content Include="Views\myOrders.aspx" />
     <Content Include="Views\profilePage.aspx" />
     <Content Include="Views\Register.aspx" />
-    <Content Include="Views\Reports.aspx" />
     <Content Include="Views\TransactionDetails.aspx" />
     <Content Include="Views\UpdateJewel.aspx" />
     <Content Include="Web.config" />
@@ -227,13 +226,6 @@
     </Compile>
     <Compile Include="Views\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Reports.aspx.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Reports.aspx.designer.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\TransactionDetails.aspx.cs">
       <DependentUpon>TransactionDetails.aspx</DependentUpon>

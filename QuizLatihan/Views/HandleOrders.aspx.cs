@@ -82,22 +82,29 @@ namespace QuizLatihan.Views
 
         protected string GetActionText(string status)
         {
-            if (status == "Payment Pending") return "Confirm Payment";
-            if (status == "Shipment Pending") return "Ship Package";
-            if (status == "Arrived") return "Waiting for user confirmation...";
-            return "";
+            switch (status.ToLower())
+            {
+                case "payment pending": return "Confirm Payment";
+                case "shipment pending": return "Ship Package";
+                case "arrived": return "Waiting for user confirmation...";
+                default: return "";
+            }
         }
 
         protected string GetActionCommand(string status)
         {
-            if (status == "Payment Pending") return "ConfirmPayment";
-            if (status == "Shipment Pending") return "ShipPackage";
-            return "";
+            switch (status.ToLower())
+            {
+                case "payment pending": return "ConfirmPayment";
+                case "shipment pending": return "ShipPackage";
+                default: return "";
+            }
         }
 
         protected bool ShowActionButton(string status)
         {
-            return status == "Payment Pending" || status == "Shipment Pending";
+            status = status.ToLower();
+            return status == "payment pending" || status == "shipment pending";
         }
     }
 }
