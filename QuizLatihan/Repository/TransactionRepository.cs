@@ -7,6 +7,7 @@ namespace QuizLatihan.Repository
 {
     public interface ITransactionRepository
     {
+        TransactionHeader GetTransactionByIdWithDetails(int id);
         List<TransactionHeader> GetTransactionsByStatusNot(List<string> excludedStatus);
         void UpdateTransactionStatus(int transactionId, string newStatus);
         List<TransactionHeader> GetTransactionsByStatus(string status);
@@ -50,11 +51,19 @@ namespace QuizLatihan.Repository
                 .ToList();
         }
 
-        public TransactionHeader GetTransactionById(int id)
+        public List<TransactionHeader> GetTransactionsByUser(int userId)
         {
             return _db.TransactionHeaders
-                     .Include(t => t.TransactionDetails.Select(td => td.MsJewel))
-                     .FirstOrDefault(t => t.TransactionID == id);
+                .Where(t => t.UserID == userId)
+                .Include(t => t.TransactionDetails)
+                .ToList();
+        }
+
+        public TransactionHeader GetTransactionByIdWithDetails(int id)
+        {
+            return _db.TransactionHeaders
+                .Include(t => t.TransactionDetails.Select(td => td.MsJewel))
+                .FirstOrDefault(t => t.TransactionID == id);
         }
     }
 }
