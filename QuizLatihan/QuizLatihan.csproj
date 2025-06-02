@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="Controller\JewelController.cs" />
     <Compile Include="Controller\ProfileController.cs" />
+    <Compile Include="Controller\TransactionController.cs" />
     <Compile Include="Factory\JewelFactory.cs" />
     <Compile Include="Handler\BrandHandler.cs" />
     <Compile Include="Handler\CategoryHandler.cs" />

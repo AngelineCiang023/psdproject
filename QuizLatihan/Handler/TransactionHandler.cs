@@ -33,7 +33,7 @@ namespace QuizLatihan.Handler
 
         public List<object> GetTransactionDetailsById(int id)
         {
-            var transaction = _transactionRepo.GetTransactionByIdWithDetails(id);
+            var transaction = _transactionRepo.GetTransactionById(id);
             if (transaction == null)
                 return new List<object>();
 

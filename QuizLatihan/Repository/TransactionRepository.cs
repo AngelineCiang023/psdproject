@@ -51,15 +51,8 @@ namespace QuizLatihan.Repository
                 .ToList();
         }
 
-        public List<TransactionHeader> GetTransactionsByUser(int userId)
-        {
-            return _db.TransactionHeaders
-                .Where(t => t.UserID == userId)
-                .Include(t => t.TransactionDetails)
-                .ToList();
-        }
 
-        public TransactionHeader GetTransactionByIdWithDetails(int id)
+        public TransactionHeader GetTransactionById(int id)
         {
             return _db.TransactionHeaders
                 .Include(t => t.TransactionDetails.Select(td => td.MsJewel))
