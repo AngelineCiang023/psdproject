@@ -46,5 +46,10 @@ namespace QuizLatihan.Handler
                 })
                 .ToList<object>();
         }
+
+        public TransactionHeader GetTransactionById(int id)
+        {
+            return _transactionRepo.GetTransactionById(id);
+        }
     }
 }

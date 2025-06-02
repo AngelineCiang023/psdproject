@@ -15,9 +15,9 @@ namespace QuizLatihan.Controller
     {
         private readonly TransactionHandler _transactionHandler;
 
-        public TransactionController()
+        public TransactionController(ITransactionRepository transactionRepo)
         {
-            _transactionHandler = new TransactionHandler();
+            _transactionHandler = new TransactionHandler(transactionRepo);
         }
 
         public List<object> GetTransactionDetailsById(int id)
