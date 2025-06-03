@@ -103,5 +103,10 @@ namespace QuizLatihan.Views
                 Lbl_ReleaseYear.Text = "Release Year: " + jewel.JewelReleaseYear;
             }
         }
+
+        protected void BtnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Views/Homepage.aspx");
+        }
     }
 }

@@ -43,6 +43,7 @@
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        <asp:Button ID="BtnBack" runat="server" Text="Back" OnClick="BtnBack_Click" />
     </form>
 </body>
 </html>

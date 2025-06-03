@@ -106,5 +106,10 @@ namespace QuizLatihan.Views
             status = status.ToLower();
             return status == "payment pending" || status == "shipment pending";
         }
+
+        protected void BtnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Views/HomePage.aspx");
+        }
     }
 }

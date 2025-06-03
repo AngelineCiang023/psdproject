@@ -155,5 +155,10 @@ namespace QuizLatihan.Views
         protected GridView GvCart => (GridView)FindControl("gvCart");
         protected Label LblTotal => (Label)FindControl("lblTotal");
         protected DropDownList DdlPayment => (DropDownList)FindControl("ddlPayment");
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Views/HomePage.aspx");
+        }
     }
 }

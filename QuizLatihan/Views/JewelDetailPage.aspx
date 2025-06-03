@@ -33,6 +33,8 @@
             <asp:Button ID="Btn_Edit" runat="server" Text="Edit" OnClick="Btn_Edit_Click" />
             <br />
             <asp:Button ID="Btn_Delete" runat="server" Text="Delete" OnClick="Btn_Delete_Click" />
+            <br />
+            <asp:Button ID="BtnBack" runat="server" Text="Back" Onclick="BtnBack_Click"/>
         </div>
     </form>
 </body>

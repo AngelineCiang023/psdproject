@@ -42,7 +42,7 @@
 
             <asp:Button ID="btnCheckout" runat="server" Text="Checkout" OnClick="btnCheckout_Click" />
             <asp:Button ID="btnClearCart" runat="server" Text="Clear Cart" OnClick="btnClearCart_Click" />
-
+            <asp:Button ID="btnBack" runat="server" Text="Back" onClick="btnBack_Click"/>
         </div>
     </form>
 </body>

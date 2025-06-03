@@ -19,6 +19,7 @@
                     <asp:BoundField DataField="Quantity" HeaderText="Quantity" />
                 </Columns>
             </asp:GridView>
+            <asp:Button ID="BtnBack" runat="server" Text="Back" Onclick="BtnBack_Click"/>
         </div>
     </form>
 </body>

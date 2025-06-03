@@ -75,5 +75,10 @@ namespace QuizLatihan.Views
                 LoadOrders();
             }
         }
+
+        protected void BtnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Views/HomePage.aspx");
+        }
     }
 }
