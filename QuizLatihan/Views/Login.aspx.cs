@@ -22,13 +22,14 @@ namespace QuizLatihan.Views
 					string Password = Request.Cookies["UserPassword"].Value;
 
 					var user = db.MsUsers.FirstOrDefault(u => u.UserEmail == Email && u.UserPassword == Password);
-					if (user != null)
-					{
-						Session["user"] = user;
-						Session["role"] = user.UserRole;
-						Response.Redirect("HomePage.aspx");
-					}
-				}
+                    if (user != null)
+                    {
+                        Session["user"] = user;
+                        Session["role"] = user.UserRole;
+                        Session["userID"] = user.UserID; // <-- tambahkan ini!
+                        Response.Redirect("HomePage.aspx");
+                    }
+                }
 			}
 		}
 
@@ -58,10 +59,11 @@ namespace QuizLatihan.Views
 
 			//login berhasil
 			Session["user"] = user;
-			Session["role"] = user.UserRole;
+            Session["role"] = user.UserRole;
+            Session["userID"] = user.UserID;
 
-			//jika rememberme dicentang, cookie disimpan otomatis
-			if (chkRemember.Checked)
+            //jika rememberme dicentang, cookie disimpan otomatis
+            if (chkRemember.Checked)
 			{
 				HttpCookie emailCookie = new HttpCookie("UserEmail", Email);
 				HttpCookie passCookie = new HttpCookie("UserPassword", Password);
